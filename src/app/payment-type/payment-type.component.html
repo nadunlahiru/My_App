@@ -1,0 +1,130 @@
+<div class="breadcrumb">
+    <h1>Payment Type</h1>
+    <!--    <ul>-->
+    <!--        <li><a href="">Form</a></li>-->
+    <!--        <li>Basic</li>-->
+    <!--    </ul>-->
+</div>
+
+<div class="separator-breadcrumb border-top"></div>
+
+<div class="row">
+
+    <div class="col-md-12">
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form>
+                                        <div class="row">
+
+                                            <div class="col-md-4 form-group mb-3">
+                                                <label>Payment Type</label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control"
+                                                           placeholder="Enter Payment Type"
+                                                           [(ngModel)]="paymentTypeDto.paymentType"
+                                                           [ngModelOptions]="{standalone: true}">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-outline-secondary" type="button">
+                                                            <i class="i-Magnifi-Glass1 header-icon"
+                                                               style="font-size: 18px "></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 form-group mb-3">
+                                                <label>Dep/Withd</label>
+                                                <select class="form-control" [(ngModel)]="paymentTypeDto.condition"
+                                                        [ngModelOptions]="{standalone: true}">
+                                                    <option value="">Select Dep/Withd</option>
+                                                    <option value="Withdraw">Withdraw</option>
+                                                    <option value="Deposit">Deposit</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-3 form-group mb-3" style="margin-top: 1.8%">
+                                                <button type="button" class="btn btn-success m-1"
+                                                        (click)="addPaymenttype(paymentTypeDto)">Add Payment Type
+                                                </button>
+                                            </div>
+                                            <div class="col-md-3"></div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <table class="table" *ngIf="showtable1">
+                                <thead>
+                                <tr>
+                                    <th style="width: 10%">#</th>
+                                    <th style="width: 50%">Type</th>
+                                    <th style="width: 15%">Dep/Withd</th>
+                                    <th style="width: 15%">Status</th>
+                                    <th style="width: 10%"></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td style="width: 10%">AAAA</td>
+                                    <td style="width: 40%">323232</td>
+                                    <td style="width: 15%">BBBBB</td>
+                                    <td style="width: 15%">BBBBB</td>
+                                    <td style="width: 10%">
+                                        <button type="button" class="btn btn-warning btn-rounded m-1">Select</button>
+                                    </td>
+
+                                </tr>
+
+
+                                </tbody>
+                            </table>
+                            <table class="table" *ngIf="showtable2">
+                                <thead>
+                                <tr>
+                                    <th style="width: 10%">#</th>
+                                    <th style="width: 50%">Type</th>
+                                    <th style="width: 15%">Dep/Withd</th>
+                                    <th style="width: 15%">Status</th>
+                                    <th style="width: 10%"></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td style="width: 10%">AAAA</td>
+                                    <td style="width: 40%">323232</td>
+                                    <td style="width: 15%">BBBBB</td>
+                                    <td style="width: 15%">BBBBB</td>
+                                    <td style="width: 10%">
+                                        <button type="button" class="btn btn-warning btn-rounded m-1">Select</button>
+                                    </td>
+
+                                </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- end of col -->
+        </div>
+    </div>
+</div>
+
+
+
+
+
+

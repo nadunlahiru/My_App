@@ -1,0 +1,200 @@
+<!--<div class="main-header">-->
+<!--    <div class="logo">-->
+<!--        <img src="./assets/images/logo.png" alt="">-->
+<!--    </div>-->
+
+<!--    <div class="menu-toggle" (click)="toggelSidebar()">-->
+<!--        <div></div>-->
+<!--        <div></div>-->
+<!--        <div></div>-->
+<!--    </div>-->
+
+<!--&lt;!&ndash;    <div class="d-flex align-items-center">&ndash;&gt;-->
+<!--&lt;!&ndash;        &lt;!&ndash; Mega menu &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <div ngbDropdown class="mega-menu d-none d-md-block">&ndash;&gt;-->
+<!--&lt;!&ndash;            <button ngbDropdownToggle href="#" class="btn text-muted dropdown-toggle mr-3">Mega Menu</button>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div ngbDropdownMenu perfectScrollbar>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="row m-0">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="col-md-4 p-4 bg-img">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <h2 class="title">Mega Menu <br> Sidebar</h2>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores natus&ndash;&gt;-->
+<!--&lt;!&ndash;                            laboriosam fugit, consequatur.&ndash;&gt;-->
+<!--&lt;!&ndash;                        </p>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.&ndash;&gt;-->
+<!--&lt;!&ndash;                            Exercitationem odio amet eos dolore suscipit placeat.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <button class="btn btn-lg btn-rounded btn-outline-warning">Learn More</button>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="col-md-4 p-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <p class="text-primary text&#45;&#45;cap border-bottom-primary d-inline-block">Features</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="menu-icon-grid w-auto p-0">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a href="#"><i class="i-Shop-4"></i> Home</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a href="#"><i class="i-Library"></i> UI Kits</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a href="#"><i class="i-Drop"></i> Apps</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a href="#"><i class="i-File-Clipboard-File&#45;&#45;Text"></i> Forms</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a href="#"><i class="i-Checked-User"></i> Sessions</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a href="#"><i class="i-Ambulance"></i> Support</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="col-md-4 p-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <p class="text-primary text&#45;&#45;cap border-bottom-primary d-inline-block">Components</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <ul class="links">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li><a href="accordion.html">Accordion</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li><a href="alerts.html">Alerts</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li><a href="buttons.html">Buttons</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li><a href="badges.html">Badges</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li><a href="carousel.html">Carousels</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li><a href="lists.html">Lists</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li><a href="popover.html">Popover</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li><a href="tables.html">Tables</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li><a href="datatables.html">Datatables</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li><a href="modals.html">Modals</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li><a href="nouislider.html">Sliders</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <li><a href="tabs.html">Tabs</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        &lt;!&ndash; Search bar &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="search-bar">&ndash;&gt;-->
+<!--&lt;!&ndash;            <input type="text" placeholder="Search" (focus)="searchService.searchOpen = true">&ndash;&gt;-->
+<!--&lt;!&ndash;            <i class="search-icon text-muted i-Magnifi-Glass1"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+
+<!--    <div style="margin: auto"></div>-->
+
+<!--    <div class="header-part-right">-->
+<!--&lt;!&ndash;        <i class="i-Magnifi-Glass1 header-icon" role="button" (click)="searchService.searchOpen = true"></i>&ndash;&gt;-->
+<!--        <i fullScreenWindow class="i-Full-Screen header-icon d-none d-sm-inline-block" role="button"></i>-->
+<!--&lt;!&ndash;        <div ngbDropdown [placement]="'bottom-right'" class="d-none d-sm-inline-block">&ndash;&gt;-->
+<!--&lt;!&ndash;            <i ngbDropdownToggle class="i-Gear text-muted header-icon" role="button"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div ngbDropdownMenu class="menu-icon-grid-dropdown">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="menu-icon-grid">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <a href="#"><i class="i-Shop-4"></i> Home</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <a href="#"><i class="i-Library"></i> UI Kits</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <a href="#"><i class="i-Drop"></i> Apps</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <a href="#"><i class="i-File-Clipboard-File&#45;&#45;Text"></i> Forms</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <a href="#"><i class="i-Checked-User"></i> Sessions</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <a href="#"><i class="i-Ambulance"></i> Support</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <div ngbDropdown [placement]="'bottom-right'">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="badge-top-container">&ndash;&gt;-->
+<!--&lt;!&ndash;                <span class="badge badge-primary">{{notifications.length}}</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                <i ngbDropdownToggle class="i-Bell text-muted header-icon" role="button"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div ngbDropdownMenu class="notification-dropdown rtl-ps-none" perfectScrollbar>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="dropdown-item d-flex" *ngFor="let item of notifications" [routerLink]="[item.link]">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="notification-icon">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <i class="{{item.icon}} text-{{item.status}} mr-1"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="notification-details flex-grow-1">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <p class="m-0 d-flex align-items-center">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <span>{{item.title}}</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <span *ngIf="item.badge" class="badge badge-pill badge-{{item.status}} ml-1 mr-1">{{item.badge}}</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <span class="flex-grow-1"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <span class="text-small text-muted ml-auto">{{item.time | relativeTime}}</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </p>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <p class="text-small text-muted m-0">{{item.text | excerpt:30}}</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+
+<!--        <div ngbDropdown [placement]="'bottom-right'" class="user col align-self-end">-->
+<!--            <img src="./assets/images/faces/1.jpg" id="userDropdown" ngbDropdownToggle alt="">-->
+
+<!--            <div ngbDropdownMenu aria-labelledby="userDropdown" class="header-account-dropdown">-->
+<!--                <div class="dropdown-header">-->
+<!--                    <i class="i-Lock-User mr-1"></i> Timothy Carlson-->
+<!--                </div>-->
+<!--                <button class="dropdown-item">Account settings</button>-->
+<!--                <button class="dropdown-item">Billing history</button>-->
+<!--                <button class="dropdown-item" (click)="signout()">Sign out</button>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--    </div>-->
+
+<!--</div>-->
+
+<div class="main-header">
+    <!--    <div class="logo">-->
+    <!--        <img src="./assets/images/Untitled-4.png" alt="" routerLink="/dashboard" style="cursor: pointer;">-->
+    <!--    </div>-->
+
+
+    <div ngbDropdown [placement]="'bottom-left'" class="d-none d-sm-inline-block" style="margin-left: 1%"
+         *ngIf="bankdashboardshow">
+        <i ngbDropdownToggle class="i-Gear text-muted text-23 i-Posterous" role="button" style="cursor: pointer"></i>
+        <div ngbDropdownMenu class="menu-icon-grid-dropdown" (click)="bankchangeRouter()">
+            <div class="menu-icon-grid">
+                <a routerLink="/main-dashboard"><i class="i-Shop-4" style="font-size:150%;cursor: pointer"></i>Home</a>
+                <a routerLink="/header/payment-type"><i class="i-Pen-5" style="font-size:150%;cursor: pointer"></i>Payment
+                    Type</a>
+                <a routerLink="/header/bank-account"><i class="i-Wallet" style="font-size:150%;cursor: pointer"></i>Bank
+                    Account</a>
+                <a routerLink="/header/bank-payment"><i class="i-Credit-Card"
+                                                        style="font-size:150%;cursor: pointer"></i>Bank Payment</a>
+                <a routerLink="/header/daily-payment"><i class="i-Coins" style="font-size:150%;cursor: pointer"></i>Daily
+                    Payment</a>
+
+
+            </div>
+        </div>
+    </div>
+    <div ngbDropdown [placement]="'bottom-left'" class="d-none d-sm-inline-block" style="margin-left: 1%"
+         *ngIf="taskdashboardshow">
+        <i ngbDropdownToggle class="i-Gear text-muted text-23 i-Posterous" role="button" style="cursor: pointer"></i>
+        <div ngbDropdownMenu class="menu-icon-grid-dropdown" (click)="taskchangeRouter()">
+            <div class="menu-icon-grid">
+                <a routerLink="/main-dashboard"><i class="i-Shop-4" style="font-size:150%;cursor: pointer"></i>Home</a>
+                <a routerLink="/header/create-task"><i class="i-Calendar-4" style="font-size:150%;cursor: pointer"></i>Create
+                    Task</a>
+                <!--                <a routerLink="/header/existing-loan"><i class="i-Information" style="font-size:150%;cursor: pointer"></i>Existing Loan</a>-->
+
+            </div>
+        </div>
+    </div>
+    <div class="d-none d-sm-inline-block" style="margin-left: 1%" *ngIf="maindashboardshow">
+        <i class="i-Gear text-muted text-25 i-Shop-4" role="button"></i>
+    </div>
+
+
+    <div style="margin-left: 1%; margin-right: 3.5%">
+        <h4 style="font-weight: bold;">{{tittle}}</h4>
+    </div>
+    <div style="margin-left: 28%">
+
+        <label style="color:#7A7E59"> {{ customDate | date: "yyyy:MM:dd"}}</label>
+    </div>
+    <div style="margin-left: 1%">
+        <label style="color:#7A7E59">{{ customDate | date: "shortTime" }}</label>
+    </div>
+
+    <div class="d-flex align-items-center"></div>
+
+    <div style="margin :auto"></div>
+
+    <div class="header-part-right" style="margin-right: 1.5%">
+
+        <i fullScreenWindow class="i-Full-Screen header-icon d-none d-sm-inline-block" role="button"></i>
+        <div class="dropdown">
+            <button type="button" class="btn btn-outline-success m-1 dropdown-toggle" data-toggle="dropdown">
+                <i class="text-15 i-Gear" style="font-size: 140%"></i>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" style="cursor: pointer">Account Setting</a>
+                <a class="dropdown-item" style="cursor: pointer">Setting</a>
+                <a class="dropdown-item" style="cursor: pointer" routerLink="/login">Log Out</a>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
